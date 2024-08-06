@@ -78,7 +78,7 @@ const Profile = () => {
     const formData = new FormData();
     formData.append("pfp", selectedFile);
 
-    const response = await fetch(`/api/users/${user._id}/profile-pic`, {
+    const response = await fetch(`/user/${user._id}`, {
       method: "PATCH",
       headers: {
         Authorization: `Bearer ${user.token}`,

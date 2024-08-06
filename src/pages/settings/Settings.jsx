@@ -101,6 +101,19 @@ const Settings = () => {
               sx={{ justifyContent: "center" }}
             />
           </Box>
+          <Box sx={{ marginBottom: 2 }}>
+            <FormControlLabel
+              control={
+                <Switch
+                  checked={notifications}
+                  onChange={handleNotificationsChange}
+                  color="primary"
+                />
+              }
+              label="Theme"
+              sx={{ justifyContent: "center" }}
+            />
+          </Box>
         </CardContent>
       </Card>
     </Container>
